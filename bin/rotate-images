@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in *.jpg; do
+  convert -rotate 90 "$file" "$file"
+done

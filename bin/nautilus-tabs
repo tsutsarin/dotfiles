@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while IFS= read -r tab; do
+    nautilus-tab "$tab"
+done < "$1"

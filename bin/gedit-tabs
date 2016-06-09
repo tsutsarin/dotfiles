@@ -1,0 +1,5 @@
+#!/bin/bash
+
+IFS=$'\n'
+set -f
+gedit $(cat "$1")

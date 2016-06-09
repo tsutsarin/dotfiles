@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for image in *.{jpg,png}; do
+  square-image "$image"
+done
+
+montage *_squared.jpg -geometry 500x500+20+20 wishboard.jpg
+rm *_squared.jpg

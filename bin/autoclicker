@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#TODO: add -r|--rate option
+
+PIDS="$( pidof -o $$ -x autoclicker )"
+
+if [ x"$PIDS" != x ]
+  #then kill -s SIGINT $PIDS
+  then pkill autoclicker.sh
+fi
+
+eval "$(xdotool getmouselocation --shell)"
+
+case $1 in
+  -f|--fixed)
+    while true; do xdotool mousemove $X $Y; xdotool click 1; sleep 0.0285; done
+    ;;
+  *)
+    while true; do xdotool click 1; sleep 0.0285; done
+    ;;
+esac
+

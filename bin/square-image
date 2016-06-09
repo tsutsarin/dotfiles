@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#TODO: manage png extension
+convert "$1" \
+          \( +clone +level-colors white \
+             \( +clone -rotate 90 +level-colors black \) \
+             -composite -bordercolor white -border 1 -trim +repage \) \
+          +swap -compose Src -gravity center -composite \
+          ${1%.*}_squared.jpg
