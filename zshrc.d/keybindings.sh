@@ -1,0 +1,4 @@
+## Keybindings
+
+bindkey ' ' magic-space
+
