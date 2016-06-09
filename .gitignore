@@ -2,3 +2,6 @@
 **/.TODO
 **/.conventions
 **/_meta.txt
+
+# This conf is dynamically created
+config/psd/.psd.conf
