@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.shellrc.d: shellrc.d
+    ~/.bashrc: .bashrc
+    ~/.bashrc.d: bashrc.d
+    ~/.zshrc: .zshrc
+    ~/.zshrc.d: zshrc.d
+    ~/.tmuxinator: tmuxinator
+    ~/bin: bin
+    ~/.config/psd/psd.conf: config/psd/psd.conf
+    ~/.notify-osd: misc/.notify-osd
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
