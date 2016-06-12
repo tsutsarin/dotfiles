@@ -6,7 +6,7 @@ PIDS="$( pidof -o $$ -x autoclicker )"
 
 if [ x"$PIDS" != x ]
   #then kill -s SIGINT $PIDS
-  then pkill autoclicker.sh
+  then pkill autoclicker
 fi
 
 eval "$(xdotool getmouselocation --shell)"
