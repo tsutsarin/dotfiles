@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# If no files passed, open home window, else open files
+if [ -z "$@"]; then
+    ec --eval '(spacemacs/home)'
+else
+    ec "$@"
+fi
