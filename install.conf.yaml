@@ -16,6 +16,7 @@
     ~/bin: bin
     ~/.config/psd/psd.conf: config/psd/psd.conf
     ~/.notify-osd: misc/.notify-osd
+    ~/.spacemacs: .spacemacs
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
