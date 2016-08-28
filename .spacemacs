@@ -26,7 +26,9 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
-     git
+     (git :variables
+          git-magit-status-fullscreen t
+          )
      github
      markdown
      org
