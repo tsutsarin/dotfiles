@@ -36,7 +36,7 @@ if [ -d $HOME/.shellrc.d ]; then
     done
 fi
 
-# Load all files from .bashrc.d directory
+# Load all files from .zshrc.d directory
 if [ -d $HOME/.zshrc.d ]; then
     for file in $HOME/.zshrc.d/*.sh; do
         source $file
