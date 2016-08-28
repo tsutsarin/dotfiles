@@ -8,3 +8,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Completion for hub package
+if [ -f /home/master/.linuxbrew/etc/bash_completion.d/hub.bash_completion.sh ]; then
+    . /home/master/.linuxbrew/etc/bash_completion.d/hub.bash_completion.sh
+fi

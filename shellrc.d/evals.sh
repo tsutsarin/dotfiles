@@ -3,3 +3,6 @@
 
 # thefuck
 eval "$(thefuck --alias)"
+
+# hub
+eval "$(hub alias -s)"
