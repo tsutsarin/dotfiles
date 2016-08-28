@@ -42,3 +42,10 @@ if [ -d $HOME/.zshrc.d ]; then
         source $file
     done
 fi
+
+# Load all files from .zshrc.d/completions directory
+if [ -d $HOME/.zshrc.d ]; then
+    for file in $HOME/.zshrc.d/completions/*; do
+        source $file
+    done
+fi
