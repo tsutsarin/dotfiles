@@ -12,3 +12,8 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # Rust executables
 export PATH=$PATH:~/.cargo/bin
+
+# Linuxbrew is a fork of Homebrew, the Mac OS package manager, for Linux
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
