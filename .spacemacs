@@ -29,6 +29,7 @@ values."
                       auto-completion-complete-with-key-sequence "jk"
                       )
      better-defaults
+     dockerfile
      emacs-lisp
      (git :variables
           git-magit-status-fullscreen t
