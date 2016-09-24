@@ -11,7 +11,7 @@ until ping -c 1 "${1:-$HOST}" > /dev/null 2>&1; do
 	notify-send "Waiting for internet..."
 done
 
-# Kill bubble
+# Kill notification bubble
 pkill notify-osd
 
 # Pop notification and keep it on for an hour
