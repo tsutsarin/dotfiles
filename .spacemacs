@@ -44,6 +44,7 @@ values."
                      spell-checking-enable-by-default nil)
      syntax-checking
      version-control
+     yaml
      (python :variables
              python-enable-yapf-format-on-save t)
      )
