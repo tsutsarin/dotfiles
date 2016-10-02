@@ -17,3 +17,9 @@ export PATH=$PATH:~/.cargo/bin
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
+# virtualenvwrapper
+export VIRTUALENV_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
