@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+PROGRAM_NAME=$(basename $0)
+  
+help(){
+    echo "Usage: ${PROGRAM_NAME} <subcommand>"
+    echo "Subcommands:"
+    echo "    on    Make one monitor active"
+    echo "    off   Restore two monitors back"
+}
+  
+on(){
+    xrandr --output LVDS1 --off
+}
+  
+off(){
+    xrandr --output LVDS1 --auto --primary --below HDMI1
+}
+  
+SUBCOMMAND=${1:-""}
+case $SUBCOMMAND in
+    "" | "-h" | "--help")
+        help
+        ;;
+    *)
+        shift
+        ${SUBCOMMAND} $@
+        if [ $? = 127 ]; then
+            echo "Error: '${SUBCOMMAND}' is not a known subcommand." >&2
+            echo "       Run '${PROGRAM_NAME} --help' for a list of known subcommands." >&2
+            exit 1
+        fi
+        ;;
+esac
